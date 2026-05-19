@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beauty salon</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="nav-bar">
+          <h1>Beauty salon</h1>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          <ul class="nav-items" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div id="home" class="header-content">
+          <div class="header-text">
+            <p>Welcome to beauty oasis</p>
+            <h1>YOUR HAIR DESERVES THE BEST</h1>
+            <p>
+              Treat your hair to the premium care and radiance it deserves. Our
+              team of experts uses only high-end products to bring your look to
+              perfection.
+            </p>
+            <button id="AppoitmentButton" class="DesignButton">
+              BOOK AN APPOINTMENT
+            </button>
+            <div id="bookingModal" class="modal">
+              <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Book an appointment</h3>
+                <form id="appointmentForm">
+                  <input type="text" placeholder="FirstName" required />
+                  <input type="text" placeholder="LastName" required />
+                  <input type="date" required />
+                  <button type="submit" class="confirm-btn">Confirm</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="Services">
+        <h2>OUR SERVICES</h2>
+        <div class="services-content">
+          <div class="services-card">
+            <div class="services-card-container" id="card-1">
+              <img src="image/photo2.jpg" />
+              <h3>Professional Hair Styling</h3>
+              <p>
+                Expert cuts, vibrant coloring, and styling tailored to your
+                unique personality and hair type.
+              </p>
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="services-card-container" id="card-2">
+              <img src="image/photo3.jpg" />
+              <h3>Eyelash Extensions</h3>
+              <p>
+                Enhance your natural beauty with premium lash extensions for a
+                stunning, long-lasting look.
+              </p>
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="services-card-container" id="card-3">
+              <img src="image/photo4.jpg" />
+              <h3>Luxury Manicure</h3>
+              <p>
+                Indulge in professional nail care, from classic manicures to
+                creative nail art and gel treatments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="About">
+        <div class="About-content">
+          <h1>About us</h1>
+          <h2>TRADITION & QUALITY</h2>
+          <p>
+            Our salon is a place where a relaxing atmosphere meets premium
+            service. For years, we have been dedicated to making every client
+            leave with a smile, using only proven techniques and luxury cosmetic
+            brands. Your satisfaction is our greatest motivation.
+          </p>
+          <div id="moreText" class="more-text" style="display: none">
+            <p>
+              We believe that beauty is an art form, and every client is our
+              canvas. Beyond our aesthetic treatments, we strive to provide a
+              sanctuary where you can escape the hustle of daily life. Our team
+              of highly trained experts stays at the forefront of the industry,
+              combining traditional mastery with the latest innovations in
+              skincare and hair design.
+            </p>
+          </div>
+          <button id="ReadMore" class="DesignButton">READ MORE</button>
+        </div>
+      </div>
+      <div id="contact" class="contactUs">
+        <h1>Contact</h1>
+        <div class="contact-content">
+          <div class="info">
+            <h3>Address: City Center, Main Street No. 1</h3>
+            <h3>Phone: +111 60 000 000</h3>
+            <h3>Email: info@salon.com</h3>
+          </div>
+          <div>
+            <div class="social">
+              <h3>Follow us:</h3>
+              <h3>Instagram: @username</h3>
+              <h3>Facebook: User Name</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy;Page made by Tamara Jotanović 2026</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

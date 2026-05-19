@@ -1,0 +1,270 @@
+body {
+  background-color: #8d7455;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  height: 100vh;
+  background-image: url(image/first_page.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.nav-bar {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.nav-bar h1 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 40px;
+}
+.nav-items li {
+  text-decoration: none;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-items a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+}
+.menu-icon {
+  display: none;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  height: 500px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.header-text {
+  color: white;
+  text-align: center;
+  max-width: 400px;
+}
+.header-text p {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.header-text h1 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+.DesignButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 14px 35px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.DesignButton:hover {
+  background-color: white;
+  color: #8d7455;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.confirm-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.Services {
+  position: relative;
+}
+.Services h2 {
+  background-color: white;
+  margin-top: 0px;
+  height: 60px;
+  text-align: center;
+  padding-top: 30px;
+}
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+.services-card {
+  background-color: white;
+  height: 400px;
+  width: 350px;
+  text-align: center;
+  border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.services-card img {
+  width: 150px;
+  height: 180px;
+  padding: 30px;
+}
+#card-2 img {
+  width: 180px;
+  height: 150px;
+  padding: 30px;
+}
+.About {
+  position: relative;
+  background-image: url(image/photo5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  justify-content: center; /* add this */
+}
+.About::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.About-content {
+  position: relative;
+  z-index: 1; /* puts text above the overlay */
+  color: white;
+  max-width: 800px;
+  text-align: center;
+  font-size: 20px;
+}
+.contactUs {
+  height: 400px;
+  color: white;
+}
+.contactUs h1 {
+  text-align: center;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  padding: 8px;
+}
+@media only screen and (max-width: 700px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .header-content {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-content h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    width: 100%;
+  }
+  .header-content p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .nav-items {
+    flex-direction: column;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+  }
+  #nav-links.active {
+    display: flex;
+  }
+  .header-content button {
+    width: auto;
+    max-width: 70%;
+  }
+  .services-content {
+    flex-direction: column;
+    margin: 15px;
+  }
+  .services-card {
+    padding: 10px;
+    margin: 5px;
+  }
+}
